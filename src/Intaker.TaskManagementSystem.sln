@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intaker.TaskManagementSystem.API", "Intaker.TaskManagementSystem.API\Intaker.TaskManagementSystem.API.csproj", "{535F276F-11DC-40E9-914A-0D14E6FC98DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intaker.TaskManagementSystem.API.Entities", "Intaker.TaskManagementSystem.API.Entities\Intaker.TaskManagementSystem.API.Entities.csproj", "{507EC301-1AF0-46CC-AD16-39A4267DC048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intaker.TaskManagementSystem.Messaging", "Intaker.TaskManagementSystem.Messaging\Intaker.TaskManagementSystem.Messaging.csproj", "{9B09F701-D340-4C10-A8DD-AAEBC9DAE88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intaker.TaskManagementSystem.DataAccess.Entities", "Intaker.TaskManagementSystem.DataAccess.Entities\Intaker.TaskManagementSystem.DataAccess.Entities.csproj", "{400B43E5-C075-4E21-B624-526BDB3889DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intaker.TaskManagementSystem.DataAccess", "Intaker.TaskManagementSystem.DataAccess\Intaker.TaskManagementSystem.DataAccess.csproj", "{5DDE5151-20DB-48C9-8180-BF4B88CBB65E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intaker.TaskManagementSystem.Entities.Enums", "Intaker.TaskManagementSystem.Entities.Enums\Intaker.TaskManagementSystem.Entities.Enums.csproj", "{2149A4D2-6911-472F-BD56-32330253FEE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{535F276F-11DC-40E9-914A-0D14E6FC98DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535F276F-11DC-40E9-914A-0D14E6FC98DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535F276F-11DC-40E9-914A-0D14E6FC98DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535F276F-11DC-40E9-914A-0D14E6FC98DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{507EC301-1AF0-46CC-AD16-39A4267DC048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{507EC301-1AF0-46CC-AD16-39A4267DC048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{507EC301-1AF0-46CC-AD16-39A4267DC048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{507EC301-1AF0-46CC-AD16-39A4267DC048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B09F701-D340-4C10-A8DD-AAEBC9DAE88C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B09F701-D340-4C10-A8DD-AAEBC9DAE88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B09F701-D340-4C10-A8DD-AAEBC9DAE88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B09F701-D340-4C10-A8DD-AAEBC9DAE88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{400B43E5-C075-4E21-B624-526BDB3889DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{400B43E5-C075-4E21-B624-526BDB3889DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{400B43E5-C075-4E21-B624-526BDB3889DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{400B43E5-C075-4E21-B624-526BDB3889DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DDE5151-20DB-48C9-8180-BF4B88CBB65E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DDE5151-20DB-48C9-8180-BF4B88CBB65E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DDE5151-20DB-48C9-8180-BF4B88CBB65E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DDE5151-20DB-48C9-8180-BF4B88CBB65E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2149A4D2-6911-472F-BD56-32330253FEE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2149A4D2-6911-472F-BD56-32330253FEE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2149A4D2-6911-472F-BD56-32330253FEE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2149A4D2-6911-472F-BD56-32330253FEE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
