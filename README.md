@@ -10,4 +10,10 @@ To run the application:
 
   Documentation: https://www.rabbitmq.com/docs/download
    
-2. Run Intaker.TaskManagementSystem.API project.
+2. Update appsettings.json in the case your sql server name is different from '(localdb)\\mssqllocaldb'
+
+```
+"DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=Intaker;Trusted_Connection=True;MultipleActiveResultSets=true"
+```
+
+3. Run Intaker.TaskManagementSystem.API project.
