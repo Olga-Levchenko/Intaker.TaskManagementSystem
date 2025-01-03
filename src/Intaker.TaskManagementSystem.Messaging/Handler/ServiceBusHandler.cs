@@ -7,21 +7,25 @@ using RabbitMQ.Client.Events;
 
 namespace Intaker.TaskManagementSystem.Messaging.Handler
 {
-    public class ServiceBusHandler(ILogger<ServiceBusHandler> logger) : IServiceBusHandler, IDisposable
+    public class ServiceBusHandler : IServiceBusHandler, IDisposable
     {
-        private const string HostName = "localhost";
         private const string QueueName = "tasks";
-        private readonly ILogger<ServiceBusHandler> _logger = logger;
+        private readonly ILogger<ServiceBusHandler> _logger;
 #pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
-        private ConnectionFactory _factory;
+        private readonly IConnectionFactory _factory;
         private IConnection _connection;
         private IChannel _channel;
         private AsyncEventingBasicConsumer _consumer;
+
+        public ServiceBusHandler(ILogger<ServiceBusHandler> logger, IConnectionFactory factory)
 #pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.
+        {
+            _logger = logger;
+            _factory = factory;
+        }
 
         public async Task Configure()
         {
-            _factory = new ConnectionFactory { HostName = HostName };
             _connection = await _factory.CreateConnectionAsync();
             _channel = await _connection.CreateChannelAsync();
 

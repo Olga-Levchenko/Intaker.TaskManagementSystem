@@ -11,7 +11,13 @@ if (string.IsNullOrEmpty(connectionString))
     throw new ApplicationException("Connection string 'DefaultConnection' is not found.");
 }
 builder.Services.AddDataAccess(connectionString);
-builder.Services.AddMessaging();
+
+var rabbitmqHostName = builder.Configuration.GetValue<string>("rabbitmqHostName");
+if (string.IsNullOrEmpty(rabbitmqHostName))
+{
+    throw new ApplicationException("Rabbitmq host name is not found.");
+}
+builder.Services.AddMessaging(rabbitmqHostName);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
